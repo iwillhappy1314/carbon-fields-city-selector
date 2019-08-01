@@ -1,0 +1,25 @@
+{
+    "name": "wenprise/carbon-fields-city-selector",
+    "description": "Select city in china",
+    "keywords": ["wordpress", "carbon-field", "carbon-field-city-selector"],
+    "homepage": "https://github.com/htmlburger/carbon-field-city-selector/",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Amos Lee",
+            "email": "amos@wpcio.com"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.1"
+    },
+    "autoload": {
+        "files": [
+            "field.php"
+        ],
+        "psr-4": {
+            "Carbon_Field_City_Selector\\": "core/"
+        }
+    }
+}
