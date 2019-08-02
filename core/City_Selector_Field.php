@@ -12,9 +12,9 @@ class City_Selector_Field extends Field
 	 * {@inheritDoc}
 	 */
 	protected $default_value = array(
-		'province' => '',
-		'city' => '',
-		'district' => '',
+		'province' => '110000',
+		'city' => '110100',
+		'district' => '110101',
 	);
 
 	/**
@@ -26,7 +26,12 @@ class City_Selector_Field extends Field
 	 */
 	public function __construct($type, $name, $label)
 	{
-		$this->set_value_set(new Value_Set(Value_Set::TYPE_MULTIPLE_PROPERTIES, array('province' => '', 'city' => '', 'district' => '')));
+		$this->set_value_set(new Value_Set(
+			Value_Set::TYPE_MULTIPLE_PROPERTIES,
+			array(
+				'province' => '', 'city' => '', 'district' => ''
+			)
+		));
 		parent::__construct($type, $name, $label);
 	}
 
