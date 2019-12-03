@@ -2,8 +2,8 @@
  * External dependencies.
  */
 import { Component, Fragment } from '@wordpress/element';
-import CityPicker from 'react-city-picker'
-import data from '../node_modules/china-area-data/data'
+import CityPicker from 'react-city-picker';
+import data from '../node_modules/china-area-data/data';
 
 class CitySelectorField extends Component {
   /**
