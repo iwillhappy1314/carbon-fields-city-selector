@@ -9,8 +9,8 @@ class CitySelectorField extends Component {
   /**
    * Handles the change of the input.
    *
-   * @param  {Object} e
    * @return {void}
+   * @param location
    */
   handleChange = (location) => {
     const { id, value, onChange, } = this.props;
